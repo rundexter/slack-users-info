@@ -1,0 +1,34 @@
+{
+    "title": "Slack User Info",
+    "icon": "slack",
+    "providers": [{
+        "name":"slack",
+        "scopes":["users:read"]
+    }],
+    "inputs": [
+        {
+            "description": "User to get info on",
+            "id": "user_id",
+            "title": "User ID"
+        }
+    ],
+    "outputs": [{
+        "id": "name",
+        "title": "Name"
+    }, {
+        "id": "deleted",
+        "title": "Deleted"
+    }, {
+        "id": "color",
+        "title": "Color"
+    }, {
+        "id": "profile",
+        "title": "Profile"
+    }, {
+        "id": "is_admin",
+        "title": "Is Admin"
+    }, {
+        "id": "is_owner",
+        "title": "Is Owner"
+    }]
+}
